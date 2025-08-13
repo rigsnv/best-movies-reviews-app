@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Montserrat Font Declarations */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Italic-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Set Montserrat as default font using CSS custom properties */
+:root {
+  --font-family-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Apply to body for global usage */
+html, body {
+  font-family: var(--font-family-sans);
+}
+
+/* Utility classes for explicit Montserrat usage */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
